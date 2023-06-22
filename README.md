@@ -41,7 +41,7 @@ Before a TTC estimate can be computed in the next exercise, you need to find all
 
 With a 2D camera however, the process of TTC computation is more complicated: First, the camera does not perform 3D measurements but only captures a 2D image of the scene. Second, we need to reliably and accurately identify vehicles in order to track their motion over time. To compute the TTC, we need to rely on the scale change of a vehicle (i.e. its increase in size on the image sensor in successive frames).
 
-![OVERVIEW](https://github.com/Ajithgit96/3D-Object-Tracking-SFND/blob/main/images/Distance_Visualization.png?raw=true)
+![OVERVIEW](https://github.com/Ajithgit96/3D-Object-Tracking-SFND/blob/main/images/Image_formation.png?raw=true)
 ![OVERVIEW](https://github.com/Ajithgit96/3D-Object-Tracking-SFND/blob/main/images/TTC_equations.png?raw=true)
 
 We detect keypoint correspondences by calculating euclidean distances.Please see picture below. If it were possible to locate uniquely identifiable keypoints that could be tracked from one frame to the next, we could use the distance between all keypoints on the vehicle relative to each other to compute a robust estimate of the height ratio in out TTC equation.
